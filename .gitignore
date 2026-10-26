@@ -1,0 +1,11 @@
+# Betriebssystem
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editoren
+.vscode/
+*.swp
+
+# Lokale Claude-Einstellungen (Berechtigungen, keine Projektdateien)
+.claude/settings.local.json

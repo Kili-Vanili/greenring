@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenring – Wie grün ist das wirklich?</title>
+  <meta name="description" content="Greenring bewertet Alltagsprodukte nach Klima, Natur & Tieren und Verpackung. Ein Ring, ein Blick, eine ehrliche Antwort.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Greenring Startseite">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="4"/>
+          <path d="M16 5a11 11 0 0 1 11 11" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span>Greenring</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#produkte">Produkte</a>
+        <a href="#ring-check">So funktioniert's</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#vorschlagen">Produkt vorschlagen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Der Ring-Check</p>
+        <h1>Wie grün ist das wirklich?</h1>
+        <p class="lead">
+          Greenring bewertet Alltagsprodukte ehrlich und nachvollziehbar.
+          Ein Ring zeigt dir auf einen Blick, wie gut ein Produkt für Klima, Natur und Verpackung abschneidet.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#produkte">Produkte ansehen</a>
+          <a class="btn btn-ghost" href="#ring-check">So funktioniert's</a>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-ring" aria-hidden="true"></div>
+    </section>
+
+    <!-- PRODUKTE -->
+    <section class="section" id="produkte">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Geprüfte Produkte</p>
+          <h2>Alle Bewertungen</h2>
+          <p class="muted">Klick auf ein Produkt für die ausführliche Bewertung, das Video und eine bessere Alternative.</p>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- RING-CHECK -->
+    <section class="section section-alt" id="ring-check">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">So funktioniert's</p>
+          <h2>Drei Bereiche, ein Ring</h2>
+          <p class="muted">Jedes Produkt bekommt in drei Bereichen einen Wert von 0 bis 100. Daraus ergibt sich der Gesamtwert in der Mitte des Rings.</p>
+        </div>
+        <div class="cards cards-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm-1-13h2v6l5 3-1 1.7-6-3.7V7Z"/></svg>
+            </div>
+            <h3>Klima <span class="weight">40 %</span></h3>
+            <p>Wie viel CO₂ entsteht bei Herstellung, Transport und Entsorgung? Und wie oft muss ich das Produkt nutzen, damit es sich lohnt?</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C7 7 4 10 4 14a8 8 0 0 0 16 0c0-4-3-7-8-12Zm0 18a6 6 0 0 1-6-6c0-2.5 2-5 6-9 4 4 6 6.5 6 9a6 6 0 0 1-6 6Z"/></svg>
+            </div>
+            <h3>Natur &amp; Tiere <span class="weight">40 %</span></h3>
+            <p>Welche Folgen hat das Produkt für Böden, Wasser, Wälder und Tiere? Entsteht Mikroplastik, werden Pestizide eingesetzt?</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3v12h2a3 3 0 0 0 6 0h2a3 3 0 0 0 6 0h2V12l-4-4ZM8 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm9-7h2.5l1.5 2h-4v-2Zm-1 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
+            </div>
+            <h3>Verpackung <span class="weight">20 %</span></h3>
+            <p>Wie viel Verpackung ist nötig, woraus besteht sie und lässt sie sich wirklich recyceln?</p>
+          </article>
+        </div>
+
+        <div class="stufen">
+          <h3>Die drei Prüfstufen</h3>
+          <ol class="stufen-list">
+            <li>
+              <span class="stufe-badge stufe-1">1</span>
+              <div><strong>Berechnet</strong><p class="muted">Bewertung auf Basis von Studien und öffentlichen Daten.</p></div>
+            </li>
+            <li>
+              <span class="stufe-badge stufe-2">2</span>
+              <div><strong>Ring-Check: Geprüft</strong><p class="muted">Von uns persönlich getestet und im Video gezeigt.</p></div>
+            </li>
+            <li>
+              <span class="stufe-badge stufe-3">3</span>
+              <div><strong>Ring-Check: Vor Ort geprüft</strong><p class="muted">Wir waren beim Hersteller oder in der Produktion.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">Häufige Fragen</p>
+          <h2>Nachgefragt</h2>
+        </div>
+        <details class="faq-item" open>
+          <summary>Wer steckt hinter Greenring?</summary>
+          <p>Platzhalter: Hier kurz vorstellen, wer ihr seid und warum ihr Greenring macht.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Werdet ihr von Herstellern bezahlt?</summary>
+          <p>Platzhalter: Hier erklären, wie ihr euch finanziert und dass Bewertungen unabhängig sind.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Wie kommen die Werte zustande?</summary>
+          <p>Jeder Bereich bekommt einen Wert von 0 bis 100. Klima und Natur zählen je 40 Prozent, Verpackung 20 Prozent. Der Gesamtwert ist der gewichtete Durchschnitt.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kann ich ein Produkt vorschlagen?</summary>
+          <p>Ja, unten auf der Seite. Wir nehmen uns die Produkte vor, die am häufigsten gewünscht werden.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- VORSCHLAGEN -->
+    <section class="section cta" id="vorschlagen">
+      <div class="container cta-inner">
+        <h2>Welches Produkt sollen wir prüfen?</h2>
+        <p class="muted">Schreib uns, was dich im Supermarkt zweifeln lässt.</p>
+        <form class="cta-form" action="#" method="post">
+          <label class="sr-only" for="vorschlag">Produktname</label>
+          <input id="vorschlag" type="text" placeholder="z. B. Hafermilch im Tetrapak" required>
+          <button class="btn" type="submit">Vorschlagen</button>
+        </form>
+        <p class="tiny muted">Formular ist noch nicht angebunden.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Greenring</span>
+      <nav class="footer-nav">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#top">Nach oben ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ring.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
